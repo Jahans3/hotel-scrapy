@@ -1,148 +1,21 @@
 [
     {
-        "name": "Corinthia Hotel London",
-        "phone": "020 7930 8181",
-        "address": "Whitehall Place, London SW1A 2BD, EnglandWhitehall Place, London SW1A 2BD, England"
+        "name": "Club Quarters Hotel, Trafalgar Square",
+        "address": "8 Northumberland Avenue | Northumberland House, London WC2N 5BY, England8 Northumberland Avenue | Northumberland House, London WC2N 5BY, England"
     },
     {
-        "name": "The Westbridge Hotel"
+        "name": "hub by Premier Inn London Covent Garden Hotel",
+        "phone": "0333 321 3104",
+        "address": "110 St Martin's Lane, London WC2N 4BA, England110 St Martin's Lane, London WC2N 4BA, England"
     },
     {
-        "name": "London Marriott Hotel Marble Arch",
-        "address": "134 George Street, London W1H 5DN, England134 George Street, London W1H 5DN, England"
+        "name": "The Belgrave",
+        "address": "80-86 Belgrave Road, London SW1V 2BJ, England80-86 Belgrave Road, London SW1V 2BJ, England"
     },
     {
-        "name": "Mondrian London at Sea Containers",
-        "phone": "020 3389 9690",
-        "address": "20 Upper Ground, London SE1 9PD, England20 Upper Ground, London SE1 9PD, England"
-    },
-    {
-        "name": "Qbic Hotel London City",
-        "phone": "020 3021 3300",
-        "address": "42, Adler Street, London E1 1EE, England42, Adler Street, London E1 1EE, England"
-    },
-    {
-        "phone": "020 7262 0111",
-        "name": "Park Grand London Lancaster Gate",
-        "address": "14-16 Craven Hill, Lancaster Gate, London W2 3DU, England14-16 Craven Hill, Lancaster Gate, London W2 3DU, England"
-    },
-    {
-        "name": "The Soho Hotel",
-        "phone": "020 7559 3000",
-        "address": "4 Richmond Mews, London W1D 3DH, England4 Richmond Mews, London W1D 3DH, England"
-    },
-    {
-        "name": "London House Hotel"
-    },
-    {
-        "name": "Taj 51 Buckingham Gate Suites and Residences",
-        "phone": "020 7769 7766",
-        "address": "51 Buckingham Gate, London SW1E 6AF, England51 Buckingham Gate, London SW1E 6AF, England"
-    },
-    {
-        "name": "The Royal Horseguards",
-        "phone": "0871 376 9033",
-        "address": "2 Whitehall Court, London SW1A 2EJ, England2 Whitehall Court, London SW1A 2EJ, England"
-    },
-    {
-        "name": "Strand Palace Hotel",
-        "phone": "020 7379 4737",
-        "address": "372 Strand, London WC2R 0JJ, England372 Strand, London WC2R 0JJ, England"
-    },
-    {
-        "phone": "+44 808 234 1953",
-        "name": "ME London",
-        "address": "336 - 337 Strand, London WC2R 1HA, England336 - 337 Strand, London WC2R 1HA, England"
-    },
-    {
-        "name": "Park Plaza Westminster Bridge London",
-        "phone": "0844 415 6790",
-        "address": "200 Westminster Bridge Road, London SE1 7UT, England200 Westminster Bridge Road, London SE1 7UT, England"
-    },
-    {
-        "name": "The Bailey's Hotel London",
-        "address": "140 Gloucester Road, London SW7 4QH, England140 Gloucester Road, London SW7 4QH, England"
-    },
-    {
-        "name": "Premier Inn London Euston Hotel",
-        "phone": "0871 527 8656",
-        "address": "1 Dukes Road, London WC1H 9PJ, England1 Dukes Road, London WC1H 9PJ, England"
-    },
-    {
-        "phone": "020 7589 6300",
-        "name": "The Kensington Hotel",
-        "address": "109 - 113 Queen's Gate, London SW7 5LP, England109 - 113 Queen's Gate, London SW7 5LP, England"
-    },
-    {
-        "phone": "020 3879 4470",
-        "name": "K+K Hotel George",
-        "address": "1 - 15 Templeton Place | Earls Court, Kensington, London SW5 9NB, England1 - 15 Templeton Place | Earls Court, Kensington, London SW5 9NB, England"
-    },
-    {
-        "name": "The Windermere Hotel",
-        "phone": "028 2003 2163",
-        "address": "142-144 Warwick Way | Victoria, London SW1V 4JE, England142-144 Warwick Way | Victoria, London SW1V 4JE, England"
-    },
-    {
-        "name": "Hotel Indigo London Kensington",
-        "phone": "0871 423 4917",
-        "address": "34-44 Barkston Gardens, London SW5 0EW, England34-44 Barkston Gardens, London SW5 0EW, England"
-    },
-    {
-        "phone": "020 7637 1001",
-        "name": "The Montague on The Gardens",
-        "address": "15 Montague Street, Bloomsbury, London WC1B 5BJ, England15 Montague Street, Bloomsbury, London WC1B 5BJ, England"
-    },
-    {
-        "phone": "020 7470 4000",
-        "name": "Haymarket Hotel",
-        "address": "1 Suffolk Place, London SW1Y 4HX, England1 Suffolk Place, London SW1Y 4HX, England"
-    },
-    {
-        "name": "The Nadler Kensington",
-        "phone": "020 7244 2255",
-        "address": "25 Courtfield Gardens, Kensington | Kensington, London SW5 0PG, England25 Courtfield Gardens, Kensington | Kensington, London SW5 0PG, England"
-    },
-    {
-        "name": "London Marriott Hotel Regents Park",
-        "address": "128 King Henrys Road, London NW3 3ST, England128 King Henrys Road, London NW3 3ST, England"
-    },
-    {
-        "name": "The Langham, London",
-        "phone": "020 7636 1000",
-        "address": "1c Portland Place | Regent Street, London W1B 1JA, England1c Portland Place | Regent Street, London W1B 1JA, England"
-    },
-    {
-        "name": "Rosewood London",
-        "phone": "020 7781 8888",
-        "address": "252 High Holborn, London WC1V 7EN, England252 High Holborn, London WC1V 7EN, England"
-    },
-    {
-        "phone": "020 3828 7113",
-        "name": "The Savoy",
-        "address": "The Strand, London WC2R 0EU, EnglandThe Strand, London WC2R 0EU, England"
-    },
-    {
-        "name": "Hampton by Hilton London Waterloo"
-    },
-    {
-        "phone": "0871 423 4917",
-        "name": "Crowne Plaza London Kensington",
-        "address": "100 Cromwell Road | Kensington, London SW7 4ER, England100 Cromwell Road | Kensington, London SW7 4ER, England"
-    },
-    {
-        "name": "The Grand at Trafalgar Square",
-        "phone": "020 3389 6857",
-        "address": "8 Northumberland Avenue, London WC2N 5BY, England8 Northumberland Avenue, London WC2N 5BY, England"
-    },
-    {
-        "name": "St. James' Court, A Taj Hotel",
-        "phone": "020 7834 6655",
-        "address": "54 Buckingham Gate, London SW1E 6AF, England54 Buckingham Gate, London SW1E 6AF, England"
-    },
-    {
-        "name": "citizenM London Bankside",
-        "address": "20 Lavington Street, London SE1 0NZ, England20 Lavington Street, London SE1 0NZ, England"
+        "name": "DoubleTree by Hilton Hotel London ExCel",
+        "phone": "020 7540 4820",
+        "address": "2 Festoon Way | Royal Victoria Dock, Excel, Newham, London E16 1RH, England2 Festoon Way | Royal Victoria Dock, Excel, Newham, London E16 1RH, England"
     },
     {
         "name": "Hilton London Paddington",
@@ -150,67 +23,33 @@
         "address": "146 Praed St, London W2 1EE, England146 Praed St, London W2 1EE, England"
     },
     {
-        "name": "Hilton London Angel Islington",
-        "phone": "+44 800 028 1252",
-        "address": "53 Upper Street, London N1 0UY, England53 Upper Street, London N1 0UY, England"
+        "name": "Strand Palace Hotel",
+        "phone": "020 7379 4737",
+        "address": "372 Strand, London WC2R 0JJ, England372 Strand, London WC2R 0JJ, England"
     },
     {
-        "phone": "020 3856 3271",
-        "name": "Radisson Blu Edwardian Grafton Hotel",
-        "address": "130 Tottenham Court Road, London W1T 5AY, England130 Tottenham Court Road, London W1T 5AY, England"
+        "phone": "0871 376 9033",
+        "name": "The Royal Horseguards",
+        "address": "2 Whitehall Court, London SW1A 2EJ, England2 Whitehall Court, London SW1A 2EJ, England"
     },
     {
-        "phone": "0844 854 5290",
-        "name": "Park Plaza London Riverbank",
-        "address": "18 Albert Embankment, London SE1 7DP, England18 Albert Embankment, London SE1 7DP, England"
+        "name": "London Marriott Hotel Maida Vale",
+        "address": "Plaza Parade | Maida Vale, London NW6 5RP, EnglandPlaza Parade | Maida Vale, London NW6 5RP, England"
     },
     {
-        "name": "Hilton London Kensington",
-        "phone": "+44 800 028 1252",
-        "address": "179-199 Holland Park Avenue, London W11 4UL, England179-199 Holland Park Avenue, London W11 4UL, England"
+        "name": "The Soho Hotel",
+        "phone": "020 7559 3000",
+        "address": "4 Richmond Mews, London W1D 3DH, England4 Richmond Mews, London W1D 3DH, England"
     },
     {
-        "name": "Pullman London St Pancras Hotel"
+        "phone": "0871 376 9038",
+        "name": "The Grosvenor Hotel",
+        "address": "101 Buckingham Palace Road, London SW1W 0SJ, England101 Buckingham Palace Road, London SW1W 0SJ, England"
     },
     {
-        "name": "Days Hotel London- Waterloo",
-        "phone": "020 7922 1331",
-        "address": "54 Kennington Road, London SE1 7BJ, England54 Kennington Road, London SE1 7BJ, England"
-    },
-    {
-        "name": "Amba Hotel Charing Cross",
         "phone": "0871 376 9012",
+        "name": "Amba Hotel Charing Cross",
         "address": "The Strand, London WC2N 5HX, EnglandThe Strand, London WC2N 5HX, England"
-    },
-    {
-        "phone": "020 3389 9437",
-        "name": "St Martins Lane London Hotel",
-        "address": "45 St. Martin's Lane, London WC2N 4HX, England45 St. Martin's Lane, London WC2N 4HX, England"
-    },
-    {
-        "name": "DoubleTree by Hilton Hotel London - West End",
-        "phone": "020 7242 2828",
-        "address": "92 Southampton Row | Bloomsbury, London WC1B 4BH, England92 Southampton Row | Bloomsbury, London WC1B 4BH, England"
-    },
-    {
-        "name": "The Montcalm London Marble Arch",
-        "phone": "020 7958 3200",
-        "address": "2, Wallenberg Place | Top of Park Lane, Marble Arch, London W1H 7TN, England2, Wallenberg Place | Top of Park Lane, Marble Arch, London W1H 7TN, England"
-    },
-    {
-        "phone": "020 7834 6600",
-        "name": "The Rubens at the Palace",
-        "address": "39 Buckingham Palace Road | Victoria, London SW1W 0PS, England39 Buckingham Palace Road | Victoria, London SW1W 0PS, England"
-    },
-    {
-        "name": "The Marylebone",
-        "phone": "020 7486 6600",
-        "address": "47 Welbeck Street, London W1G 8DN, England47 Welbeck Street, London W1G 8DN, England"
-    },
-    {
-        "name": "Hilton London Canary Wharf",
-        "phone": "+44 800 028 1252",
-        "address": "South Quay, Marsh Wall, London E14 9SH, EnglandSouth Quay, Marsh Wall, London E14 9SH, England"
     },
     {
         "phone": "020 7613 9800",
@@ -223,32 +62,30 @@
         "address": "22 - 28 Broadway, London SW1H 0BH, England22 - 28 Broadway, London SW1H 0BH, England"
     },
     {
-        "name": "St. Pancras Renaissance Hotel London",
-        "address": "Euston Road, London NW1 2AR, EnglandEuston Road, London NW1 2AR, England"
+        "name": "Egerton House Hotel",
+        "phone": "020 7589 2412",
+        "address": "17-19 Egerton Terrace, London SW3 2BX, England17-19 Egerton Terrace, London SW3 2BX, England"
     },
     {
-        "name": "The Bloomsbury",
-        "phone": "020 7347 1000",
-        "address": "16 - 22 Great Russell Street, London WC1B 3NN, England16 - 22 Great Russell Street, London WC1B 3NN, England"
+        "name": "Travelodge London Docklands",
+        "address": "Coriander Avenue | Docklands, London E14 2AA, EnglandCoriander Avenue | Docklands, London E14 2AA, England"
     },
     {
-        "name": "Premier Inn London County Hall Hotel",
-        "phone": "0871 527 8648",
-        "address": "Belvedere Road | County Hall, London SE1 7PB, EnglandBelvedere Road | County Hall, London SE1 7PB, England"
+        "name": "The Montague on The Gardens",
+        "phone": "020 7637 1001",
+        "address": "15 Montague Street, Bloomsbury, London WC1B 5BJ, England15 Montague Street, Bloomsbury, London WC1B 5BJ, England"
     },
     {
-        "name": "Holiday Inn Express London-Newbury Park",
+        "name": "Park Plaza Westminster Bridge London"
+    },
+    {
+        "name": "Staybridge Suites London-Stratford City",
         "phone": "0871 423 4917",
-        "address": "713 Eastern Avenue | Newbury Park, London IG2 7RH, England713 Eastern Avenue | Newbury Park, London IG2 7RH, England"
+        "address": "10B Chestnut Plaza | Westfield-Stratford City, London E20 1GL, England10B Chestnut Plaza | Westfield-Stratford City, London E20 1GL, England"
     },
     {
-        "name": "Travelodge London Central City Road",
-        "address": "1-23 City Road, London EC1Y 1AG, England1-23 City Road, London EC1Y 1AG, England"
-    },
-    {
-        "name": "Premier Inn London Hanger Lane Hotel",
-        "phone": "0871 527 8346",
-        "address": "1-6 Ritz Parade | Hangar Lane, Ealing, London W5 3RA, England1-6 Ritz Parade | Hangar Lane, Ealing, London W5 3RA, England"
+        "name": "The Bailey's Hotel London",
+        "address": "140 Gloucester Road, London SW7 4QH, England140 Gloucester Road, London SW7 4QH, England"
     },
     {
         "phone": "020 3697 3697",
@@ -256,13 +93,51 @@
         "address": "10 Carlisle Street | Soho, London W1D 3BR, England10 Carlisle Street | Soho, London W1D 3BR, England"
     },
     {
-        "name": "Doubletree by Hilton - London Islington",
-        "phone": "+44 800 028 1252",
-        "address": "60 Pentonville Road, London N1 9LA, England60 Pentonville Road, London N1 9LA, England"
+        "name": "The Marylebone",
+        "phone": "020 7486 6600",
+        "address": "47 Welbeck Street, London W1G 8DN, England47 Welbeck Street, London W1G 8DN, England"
     },
     {
-        "phone": "020 7300 0041",
-        "name": "Hotel 41",
-        "address": "41 Buckingham Palace Road, London SW1W 0PS, England41 Buckingham Palace Road, London SW1W 0PS, England"
+        "name": "The Bloomsbury",
+        "phone": "020 7347 1000",
+        "address": "16 - 22 Great Russell Street, London WC1B 3NN, England16 - 22 Great Russell Street, London WC1B 3NN, England"
+    },
+    {
+        "name": "Hotel Indigo London Kensington",
+        "phone": "0871 423 4917",
+        "address": "34-44 Barkston Gardens, London SW5 0EW, England34-44 Barkston Gardens, London SW5 0EW, England"
+    },
+    {
+        "name": "St. Ermin's Hotel, Autograph Collection",
+        "address": "2 Caxton Street | Westminster, London SW1H 0QW, England2 Caxton Street | Westminster, London SW1H 0QW, England"
+    },
+    {
+        "phone": "0871 423 4917",
+        "name": "Holiday Inn Express London-Newbury Park",
+        "address": "713 Eastern Avenue | Newbury Park, London IG2 7RH, England713 Eastern Avenue | Newbury Park, London IG2 7RH, England"
+    },
+    {
+        "name": "Apex City of London Hotel",
+        "phone": "+44 808 164 9340",
+        "address": "1 Seething Lane, London EC3N 4AX, England1 Seething Lane, London EC3N 4AX, England"
+    },
+    {
+        "name": "The Savoy",
+        "phone": "020 3828 7113",
+        "address": "The Strand, London WC2R 0EU, EnglandThe Strand, London WC2R 0EU, England"
+    },
+    {
+        "name": "The Goring",
+        "phone": "020 3871 3120",
+        "address": "15 Beeston Place, London SW1W 0JW, England15 Beeston Place, London SW1W 0JW, England"
+    },
+    {
+        "name": "Rosewood London",
+        "phone": "020 7781 8888",
+        "address": "252 High Holborn, London WC1V 7EN, England252 High Holborn, London WC1V 7EN, England"
+    },
+    {
+        "name": "The Ritz London",
+        "address": "150 Piccadilly, London W1J 9BR, England150 Piccadilly, London W1J 9BR, England"
     }
 ]

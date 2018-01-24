@@ -2,6 +2,7 @@
 const request: Function = require('request-promise')
 const cheerio: Function = require('cheerio')
 const fs: Object = require('fs-extra')
+const uniqBy = require('lodash.uniqby')
 
 const allPropsExist: Function = (base: Object, next: Object): boolean => {
   for (const prop: string in base) {
@@ -47,25 +48,25 @@ const mergeWithPreviousRecords: Function = async ({ filename, next }: { filename
   try {
     const previous: Array<Object> = JSON.parse(await fs.readFile(filename))
 
-    next.map((hotel: Object) => {
-      let existing = previous.find(({ name }) => name === hotel.name)
+    // next.map((hotel: Object) => {
+    //   let existing = previous.find(({ name }) => name === hotel.name)
+    //
+    //   while (existing) {
+    //     const existingIndex = previous.findIndex(({ name }) => name === hotel.name)
+    //
+    //     for (const prop in existing) {
+    //       if (hotel.hasOwnProperty(prop)) {
+    //         hotel[prop] = hotel[prop] ? hotel[prop] : existing[prop]
+    //       }
+    //     }
+    //
+    //     previous.splice(existingIndex, 1)
+    //
+    //     existing = previous.find(({ name }) => name === hotel.name)
+    //   }
+    // })
 
-      while (existing) {
-        const existingIndex = previous.findIndex(({ name }) => name === hotel.name)
-
-        for (const prop in existing) {
-          if (hotel.hasOwnProperty(prop)) {
-            hotel[prop] = hotel[prop] ? hotel[prop] : existing[prop]
-          }
-        }
-
-        previous.splice(existingIndex, 1)
-
-        existing = previous.find(({ name }) => name === hotel.name)
-      }
-    })
-
-    return [ ...previous, ...next ]
+    return uniqBy([ ...previous, ...next ], 'name')
   } catch (error) {
     console.log('-----------------MERGE-ERROR----------------')
     console.log(error)
@@ -82,7 +83,7 @@ export const recursiveRequest: Function = async ({ base, url, filename, itemSele
     const hotels: Array<string> = await getHotels({ base, urls, selectors })
     const merged: Array<Object> = await mergeWithPreviousRecords({ filename, next: hotels })
 
-    await fs.writeFile(filename, JSON.stringify(merged, null, 4))
+    await fs.writeFile(filename + '.json', JSON.stringify(merged, null, 4))
 
     console.log('-------------------SUCCESS------------------')
     console.log(`Saved hotels as ${filename}`)

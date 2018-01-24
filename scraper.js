@@ -1,6 +1,6 @@
 // @flow
 const { recursiveRequest } = require('./src')
-const { tripAdvisor }: { tripAdvisor: string } = require('./src/URLs/index')
+const { tripAdvisor }: { tripAdvisor: string } = require('./configs/index')
 
 const selectors: { phone: string, name: string, address: string } = {
   phone: '.blRow .blEntry.phone .ui_link .is-hidden-mobile',
@@ -9,7 +9,7 @@ const selectors: { phone: string, name: string, address: string } = {
 }
 
 recursiveRequest({
-  filename: 'trip-advisor_london.json',
+  filename: tripAdvisor.filename,
   base: tripAdvisor.base,
   url: tripAdvisor.cities.london,
   itemSelector: '.listing .meta_listing',

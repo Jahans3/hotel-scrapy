@@ -18,6 +18,30 @@ $ npm i
 $ npm start
 ```
 
+### Config
+Configs are stored in the `configs/` folder and are organised by website.
+
+Inside each website's configuration files, eg. `configs/trip-advisor.js`, you will see an object that looks something like the following:
+
+```
+module.exports = {
+  filename: '...',
+  base: '...',
+  cities: {
+    london: '...'
+  }
+}
+```
+
+The object contains a property called `base` that should contain the domain of the website you wish to scrape, and the cities property should contain URL paths to the list pages you wish to scrape.
+
+The `filename` property will be the name of the output file. Before writing a new file, the scraper reads the previous file and merges the results, so each generated file will also contain the output of the previous runs.
+
+Currently, only a config for Trip Advisor is set up.
+
+### Output
+The generated output is stored inside the root of the project and is stored in a JSON format (JavaScript Object Notation, key-value pairs). In future this will be output in a different format, for now though, if you wish to view in a table format just search Google for a JSON to table formatter and copy in the contents of the file.
+
 ## Step by Step
 1. Install Node.js - see [prerequisites](#prerequisites)
 2. Install git - see [prerequisites](#prerequisites)
