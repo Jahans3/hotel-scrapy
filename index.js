@@ -3,12 +3,7 @@ const request: Function = require('request-promise')
 const { tripAdvisor }: { tripAdvisor: string } = require('./src/URLs')
 const cheerio: Function = require('cheerio')
 const fs: Object = require('fs-extra')
-const deepMerge = require('deepmerge')
 
-// request: tripAdvisor.london-search
-// 1-31 oa000
-// 31-61 oa030
-// ... oa N+30
 const allPropsExist: Function = (base: Object, next: Object): boolean => {
   for (const prop: string in base) {
     if (!next[prop]) return false
@@ -17,35 +12,26 @@ const allPropsExist: Function = (base: Object, next: Object): boolean => {
   return true
 }
 
-const applyPropSetters = (object: Object): Object => {
-  let newObject: Object = {}
+type RecursiveFind = { uri: string, selectors: Object, prop: string, i: number, hotel: Object }
 
-  for (const prop: string in object) {
-    newObject = {
-      ...newObject,
-      [prop]: undefined,
-      set [prop] (val) {
-        if (val) return val
+const recursiveFind: Function = async ({ uri, selectors, i = 0, hotel = {} }: RecursiveFind): * => {
+  const $: Function = await request({ uri, transform: cheerio.load })
+
+  for (const prop in selectors) {
+    if (selectors.hasOwnProperty(prop)) {
+      const value = $(selectors[prop]).text()
+
+      if (value && value !== 'undefined') {
+        hotel = { ...hotel, [prop]: value }
       }
     }
   }
 
-  return newObject
-}
-const recursiveFind: Function = async ({ uri, selectors, i = 0 }: { uri: string, selectors: Object, prop: string, i: number }): * => {
-  const $: Function = await request({ uri, transform: cheerio.load })
-
-  let hotel: Object = applyPropSetters(selectors)
-
-  for (const prop in selectors) {
-    if (selectors.hasOwnProperty(prop)) {
-      hotel = { ...hotel, [prop]: $(selectors[prop]).text() }
-    }
-  }
+  console.log({ i, ...hotel })
 
   if (i === 10) return hotel
 
-  return allPropsExist(selectors, hotel) ? hotel : recursiveFind({ uri, selectors, i: ++i })
+  return allPropsExist(selectors, hotel) ? hotel : recursiveFind({ uri, selectors, hotel, i: ++i })
 }
 
 const getHotels: Function = async ({ urls, base, selectors }: { urls: Array<string>, base: string, selectors: Object }): Promise<Array<Object>> => {
@@ -58,14 +44,35 @@ const getHotels: Function = async ({ urls, base, selectors }: { urls: Array<stri
   return hotels
 }
 
-const mergeWithPreviousRecords: Function = async ({ filename, next }): Object => {
+const mergeWithPreviousRecords: Function = async ({ filename, next }: { filename: string, next: Array<Object> }): Promise<*> => {
   try {
-    const previous: string = JSON.parse(await fs.readFile(filename))
-    return deepMerge(previous, next)
+    const previous: Array<Object> = JSON.parse(await fs.readFile(filename))
+
+    next.map((hotel: Object) => {
+      let existing = previous.find(({ name }) => name === hotel.name)
+
+      while (existing) {
+        const existingIndex = previous.findIndex(({ name }) => name === hotel.name)
+
+        for (const prop in existing) {
+          if (hotel.hasOwnProperty(prop)) {
+            hotel[prop] = hotel[prop] ? hotel[prop] : existing[prop]
+          }
+        }
+
+        previous.splice(existingIndex, 1)
+
+        existing = previous.find(({ name }) => name === hotel.name)
+      }
+    })
+
+    return [ ...previous, ...next ]
   } catch (error) {
     console.log('-----------------MERGE-ERROR----------------')
     console.log(error)
     console.log('-----------------MERGE-ERROR----------------')
+
+    return next
   }
 }
 
@@ -74,9 +81,9 @@ const recursiveRequest: Function = async ({ base, url, filename, itemSelector, s
     const $: Function = await request({ uri: `${base}${url}`, transform: cheerio.load })
     const urls: Array<string> = $(itemSelector).map((i, item) => $(item).data('url')).get().filter(url => url)
     const hotels: Array<string> = await getHotels({ base, urls, selectors })
-    const merged = mergeWithPreviousRecords({ filename, next: hotels })
+    const merged: Array<Object> = await mergeWithPreviousRecords({ filename, next: hotels })
 
-    await fs.writeFile(filename, JSON.stringify(merged))
+    await fs.writeFile(filename, JSON.stringify(merged, null, 4))
 
     console.log('-------------------SUCCESS------------------')
     console.log(`Saved hotels as ${filename}`)
@@ -92,7 +99,7 @@ const recursiveRequest: Function = async ({ base, url, filename, itemSelector, s
 const selectors = { phone: '.blRow .blEntry.phone .ui_link .is-hidden-mobile', name: '#HEADING', address: '.is-hidden-mobile.blEntry.address.ui_link' }
 
 recursiveRequest({
-  filename: 'trip-advisor_london.text',
+  filename: 'trip-advisor_london.json',
   base: tripAdvisor.base,
   url: tripAdvisor.cities.london,
   itemSelector: '.listing .meta_listing',
