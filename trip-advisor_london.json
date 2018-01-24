@@ -141,5 +141,105 @@
         "phone": "020 7930 8181",
         "name": "Corinthia Hotel London",
         "address": "Whitehall Place, London SW1A 2BD, EnglandWhitehall Place, London SW1A 2BD, England"
+    },
+    {
+        "phone": "020 7411 2200",
+        "name": "DoubleTree by Hilton Hotel London - Chelsea",
+        "address": "Imperial Road | Imperial Wharf, London SW6 2GA, EnglandImperial Road | Imperial Wharf, London SW6 2GA, England"
+    },
+    {
+        "name": "The Waldorf Hilton London",
+        "phone": "+44 800 028 1252",
+        "address": "Aldwych, London WC2B 4DD, EnglandAldwych, London WC2B 4DD, England"
+    },
+    {
+        "name": "DoubleTree by Hilton Hotel London ExCel",
+        "phone": "020 7540 4820",
+        "address": "2 Festoon Way | Royal Victoria Dock, Excel, Newham, London E16 1RH, England2 Festoon Way | Royal Victoria Dock, Excel, Newham, London E16 1RH, England"
+    },
+    {
+        "name": "The Arch London",
+        "phone": "020 3322 2677",
+        "address": "50 Great Cumberland Place | Marble Arch, London W1H 7FD, England50 Great Cumberland Place | Marble Arch, London W1H 7FD, England"
+    },
+    {
+        "phone": "020 7491 2622",
+        "name": "The Chesterfield Mayfair",
+        "address": "35 Charles Street | Mayfair, London W1J 5EB, England35 Charles Street | Mayfair, London W1J 5EB, England"
+    },
+    {
+        "phone": "0871 376 9036",
+        "name": "The Tower",
+        "address": "St Katharine's Way, London E1W 1LD, EnglandSt Katharine's Way, London E1W 1LD, England"
+    },
+    {
+        "name": "Holiday Inn London - Brent Cross",
+        "phone": "0871 423 4917",
+        "address": "Tilling Road | Brent Cross, London NW2 1LP, EnglandTilling Road | Brent Cross, London NW2 1LP, England"
+    },
+    {
+        "phone": "020 7834 6600",
+        "name": "The Rubens at the Palace",
+        "address": "39 Buckingham Palace Road | Victoria, London SW1W 0PS, England39 Buckingham Palace Road | Victoria, London SW1W 0PS, England"
+    },
+    {
+        "name": "The Belgrave",
+        "address": "80-86 Belgrave Road, London SW1V 2BJ, England80-86 Belgrave Road, London SW1V 2BJ, England"
+    },
+    {
+        "name": "London Marriott Hotel Maida Vale",
+        "address": "Plaza Parade | Maida Vale, London NW6 5RP, EnglandPlaza Parade | Maida Vale, London NW6 5RP, England"
+    },
+    {
+        "name": "St. Pancras Renaissance Hotel London",
+        "address": "Euston Road, London NW1 2AR, EnglandEuston Road, London NW1 2AR, England"
+    },
+    {
+        "phone": "0871 527 8648",
+        "name": "Premier Inn London County Hall Hotel",
+        "address": "Belvedere Road | County Hall, London SE1 7PB, EnglandBelvedere Road | County Hall, London SE1 7PB, England"
+    },
+    {
+        "name": "St Martins Lane London Hotel",
+        "phone": "020 3389 9437",
+        "address": "45 St. Martin's Lane, London WC2N 4HX, England45 St. Martin's Lane, London WC2N 4HX, England"
+    },
+    {
+        "name": "Premier Inn London Tower Bridge Hotel"
+    },
+    {
+        "name": "The Montcalm at the Brewery London City",
+        "phone": "020 7614 0100",
+        "address": "52 Chiswell Street, London EC1Y 4SA, England52 Chiswell Street, London EC1Y 4SA, England"
+    },
+    {
+        "name": "Park Grand London Kensington",
+        "phone": "020 7370 6831",
+        "address": "33-37 Hogarth Road | Kensington, London SW5 0QQ, England33-37 Hogarth Road | Kensington, London SW5 0QQ, England"
+    },
+    {
+        "phone": "020 7244 2255",
+        "name": "The Nadler Kensington",
+        "address": "25 Courtfield Gardens, Kensington | Kensington, London SW5 0PG, England25 Courtfield Gardens, Kensington | Kensington, London SW5 0PG, England"
+    },
+    {
+        "phone": "020 7781 8888",
+        "name": "Rosewood London",
+        "address": "252 High Holborn, London WC1V 7EN, England252 High Holborn, London WC1V 7EN, England"
+    },
+    {
+        "name": "The Milestone Hotel and Residences",
+        "phone": "020 7917 1000",
+        "address": "1 Kensington Court, London W8 5DL, England1 Kensington Court, London W8 5DL, England"
+    },
+    {
+        "name": "Egerton House Hotel",
+        "phone": "020 7589 2412",
+        "address": "17-19 Egerton Terrace, London SW3 2BX, England17-19 Egerton Terrace, London SW3 2BX, England"
+    },
+    {
+        "phone": "020 3856 4471",
+        "name": "The Stafford London",
+        "address": "16-18 St. James's Place, London SW1A 1NJ, England16-18 St. James's Place, London SW1A 1NJ, England"
     }
 ]

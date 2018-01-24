@@ -50,24 +50,6 @@ const mergeWithPreviousRecords: Function = async ({ filename, next }: { filename
   try {
     const previous: Array<Object> = JSON.parse(await fs.readFile(filename + fileExtension))
 
-    // next.map((hotel: Object) => {
-    //   let existing = previous.find(({ name }) => name === hotel.name)
-    //
-    //   while (existing) {
-    //     const existingIndex = previous.findIndex(({ name }) => name === hotel.name)
-    //
-    //     for (const prop in existing) {
-    //       if (hotel.hasOwnProperty(prop)) {
-    //         hotel[prop] = hotel[prop] ? hotel[prop] : existing[prop]
-    //       }
-    //     }
-    //
-    //     previous.splice(existingIndex, 1)
-    //
-    //     existing = previous.find(({ name }) => name === hotel.name)
-    //   }
-    // })
-
     return uniqBy([ ...previous, ...next ], 'name')
   } catch (error) {
     console.log('-----------------MERGE-ERROR----------------')
