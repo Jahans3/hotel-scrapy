@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node ./index.js"
+    "start": "babel-node ./scraper.js"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
@@ -15,6 +15,7 @@
     "request-promise": "4.2.2"
   },
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-flow": "6.23.0"
   }

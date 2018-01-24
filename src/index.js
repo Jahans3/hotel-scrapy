@@ -1,6 +1,5 @@
 // @flow
 const request: Function = require('request-promise')
-const { tripAdvisor }: { tripAdvisor: string } = require('./src/URLs')
 const cheerio: Function = require('cheerio')
 const fs: Object = require('fs-extra')
 
@@ -76,7 +75,7 @@ const mergeWithPreviousRecords: Function = async ({ filename, next }: { filename
   }
 }
 
-const recursiveRequest: Function = async ({ base, url, filename, itemSelector, selectors }: { base: string, url: string, filename: string, itemSelector: string, selectors: Object } = {}): Promise<void> => {
+export const recursiveRequest: Function = async ({ base, url, filename, itemSelector, selectors }: { base: string, url: string, filename: string, itemSelector: string, selectors: Object } = {}): Promise<void> => {
   try {
     const $: Function = await request({ uri: `${base}${url}`, transform: cheerio.load })
     const urls: Array<string> = $(itemSelector).map((i, item) => $(item).data('url')).get().filter(url => url)
@@ -95,13 +94,3 @@ const recursiveRequest: Function = async ({ base, url, filename, itemSelector, s
     console.log('--------------------ERROR-------------------')
   }
 }
-
-const selectors = { phone: '.blRow .blEntry.phone .ui_link .is-hidden-mobile', name: '#HEADING', address: '.is-hidden-mobile.blEntry.address.ui_link' }
-
-recursiveRequest({
-  filename: 'trip-advisor_london.json',
-  base: tripAdvisor.base,
-  url: tripAdvisor.cities.london,
-  itemSelector: '.listing .meta_listing',
-  selectors
-})
