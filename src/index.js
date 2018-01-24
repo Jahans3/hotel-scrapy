@@ -4,6 +4,8 @@ const cheerio: Function = require('cheerio')
 const fs: Object = require('fs-extra')
 const uniqBy = require('lodash.uniqby')
 
+const fileExtension: string = '.json'
+
 const allPropsExist: Function = (base: Object, next: Object): boolean => {
   for (const prop: string in base) {
     if (!next[prop]) return false
@@ -46,7 +48,7 @@ const getHotels: Function = async ({ urls, base, selectors }: { urls: Array<stri
 
 const mergeWithPreviousRecords: Function = async ({ filename, next }: { filename: string, next: Array<Object> }): Promise<*> => {
   try {
-    const previous: Array<Object> = JSON.parse(await fs.readFile(filename))
+    const previous: Array<Object> = JSON.parse(await fs.readFile(filename + fileExtension))
 
     // next.map((hotel: Object) => {
     //   let existing = previous.find(({ name }) => name === hotel.name)
@@ -83,7 +85,7 @@ export const recursiveRequest: Function = async ({ base, url, filename, itemSele
     const hotels: Array<string> = await getHotels({ base, urls, selectors })
     const merged: Array<Object> = await mergeWithPreviousRecords({ filename, next: hotels })
 
-    await fs.writeFile(filename + '.json', JSON.stringify(merged, null, 4))
+    await fs.writeFile(filename + fileExtension, JSON.stringify(merged, null, 4))
 
     console.log('-------------------SUCCESS------------------')
     console.log(`Saved hotels as ${filename}`)
