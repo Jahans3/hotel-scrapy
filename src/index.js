@@ -2,7 +2,7 @@
 const request: Function = require('request-promise')
 const cheerio: Function = require('cheerio')
 const fs: Object = require('fs-extra')
-const uniqBy = require('lodash.uniqby')
+const uniqBy: Function = require('lodash.uniqby')
 
 const fileExtension: string = '.json'
 

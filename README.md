@@ -2,8 +2,6 @@
 
 Simple Node.js web scraper for scraping hotel data from websites. Recursively finds all properties passed to the configuration, searching for each property a maximum of 10 times.
 
-This README is intended for non-developers.
-
 #### Prerequisites
 * Install [Node.js @ >= v8.9.1](https://nodejs.org/en/)
 * Install [Git](https://git-scm.com/downloads)
